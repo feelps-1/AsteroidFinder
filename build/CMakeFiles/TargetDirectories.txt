@@ -1,0 +1,3 @@
+/home/flops/projects/asteroidfinder/build/CMakeFiles/rebuild_cache.dir
+/home/flops/projects/asteroidfinder/build/CMakeFiles/edit_cache.dir
+/home/flops/projects/asteroidfinder/build/CMakeFiles/fits_opencv.dir

@@ -5,9 +5,9 @@ Este projeto é um script em C++ que utiliza técnicas de visão computacional, 
 ## 📜 Referências Científicas
 O projeto é baseado em técnicas apresentadas nos seguintes artigos:
 
-1. [[**"A COMPUTER VISION APPROACH FOR DETECTION OF ASTEROIDS/COMETS IN SPACE SATELLITE IMAGES"**](https://ui.adsabs.harvard.edu/abs/2020ISPAr43B3.1185Y/abstract)]
+1. [**"A COMPUTER VISION APPROACH FOR DETECTION OF ASTEROIDS/COMETS IN SPACE SATELLITE IMAGES"**(https://ui.adsabs.harvard.edu/abs/2020ISPAr43B3.1185Y/abstract)]
    - Autores: Bahareh Yekkehkhany, Parnia Shokri, Amin Zadeh
-2. [[**"THE NEOSSAT EXPERIENCE: 5 YEARS IN THE LIFE OF CANADA’S SPACE SURVEILLANCE TELESCOPE"**](https://conference.sdo.esoc.esa.int/proceedings/neosst1/paper/494)]
+2. [**"THE NEOSSAT EXPERIENCE: 5 YEARS IN THE LIFE OF CANADA’S SPACE SURVEILLANCE TELESCOPE"**(https://conference.sdo.esoc.esa.int/proceedings/neosst1/paper/494)]
    - Autores: V. Abbasi, S. Thorsteinson, D. Balam, J. Rowe, D. Laurin, L. Scott, M. Doyon
 
 ## 📂 Estrutura do Projeto

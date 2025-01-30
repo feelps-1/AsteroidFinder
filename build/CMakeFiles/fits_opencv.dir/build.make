@@ -60,15 +60,15 @@ include CMakeFiles/fits_opencv.dir/flags.make
 CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.o: CMakeFiles/fits_opencv.dir/flags.make
 CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.o: ../src/fits_opencv.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/flops/projects/asteroidfinder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.o -c /home/flops/projects/asteroidfinder/src/fits_opencv.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.o -c /home/flops/projects/asteroidfinder/src/fits_opencv.cpp
 
 CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flops/projects/asteroidfinder/src/fits_opencv.cpp > CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/flops/projects/asteroidfinder/src/fits_opencv.cpp > CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.i
 
 CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flops/projects/asteroidfinder/src/fits_opencv.cpp -o CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/flops/projects/asteroidfinder/src/fits_opencv.cpp -o CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.s
 
 # Object files for target fits_opencv
 fits_opencv_OBJECTS = \

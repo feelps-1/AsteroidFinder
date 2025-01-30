@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/flops/projects/asteroidfinder/build",
+  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4  -g   -std=gnu++17 -o CMakeFiles/fits_opencv.dir/src/fits_opencv.cpp.o -c /home/flops/projects/asteroidfinder/src/fits_opencv.cpp",
+  "file": "/home/flops/projects/asteroidfinder/src/fits_opencv.cpp"
+}
+]

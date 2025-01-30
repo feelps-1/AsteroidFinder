@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "/usr/local/include/",
                 "/usr/local/include/CCfits",
-                "/usr/local/include/opencv4"
+                "/usr/local/include/opencv4",
+                "${workspaceFolder}/src"
             ],
             "defines": [],
             "cStandard": "c17",

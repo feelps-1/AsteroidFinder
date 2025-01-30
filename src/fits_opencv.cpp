@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
     processor.salvarPreview(outputFolder);
 
     // Uncomment to enable debugging and visualization
-    processor.toggleDebug();
+    //processor.toggleDebug();
 
     vector<Mat> individualImages = processor.getCleanedImages();
 

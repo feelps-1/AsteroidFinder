@@ -5,9 +5,9 @@ Este projeto é um script em C++ que utiliza técnicas de visão computacional, 
 ## 📜 Referências Científicas
 O projeto é baseado em técnicas apresentadas nos seguintes artigos:
 
-1. [[**"A COMPUTER VISION APPROACH FOR DETECTION OF ASTEROIDS/COMETS IN SPACE SATELLITE IMAGES"**](https://ui.adsabs.harvard.edu/abs/2020ISPAr43B3.1185Y/abstract)]
+1. [**"A COMPUTER VISION APPROACH FOR DETECTION OF ASTEROIDS/COMETS IN SPACE SATELLITE IMAGES"**](https://ui.adsabs.harvard.edu/abs/2020ISPAr43B3.1185Y/abstract)
    - Autores: Bahareh Yekkehkhany, Parnia Shokri, Amin Zadeh
-2. [[**"THE NEOSSAT EXPERIENCE: 5 YEARS IN THE LIFE OF CANADA’S SPACE SURVEILLANCE TELESCOPE"**](https://conference.sdo.esoc.esa.int/proceedings/neosst1/paper/494)]
+2. [**"THE NEOSSAT EXPERIENCE: 5 YEARS IN THE LIFE OF CANADA’S SPACE SURVEILLANCE TELESCOPE"**](https://conference.sdo.esoc.esa.int/proceedings/neosst1/paper/494)
    - Autores: V. Abbasi, S. Thorsteinson, D. Balam, J. Rowe, D. Laurin, L. Scott, M. Doyon
 
 ## 📂 Estrutura do Projeto
@@ -62,6 +62,20 @@ make
 ## 📷 Resultado Esperado
 O script gera uma imagem processada destacando os rastros detectados dos asteroides, facilitando sua análise e identificação.
 
+Abaixo está a comparação do resultado das técnicas do artigo com o script processando o dataset do dia 306 de 2019, ambas as imagens já estão mescladas, existem linhas que são ruídos que só aparecem nas
+imagens individuais.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a4738af4-ec9a-4545-8d7e-171e9b606522" width="400" alt="Imagem retirada do artigo">
+</p>
+<p align="center"><em>Imagem retirada do artigo</em></p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3896b8b3-462c-421f-8134-5d00ff74011d" width="400" alt="Imagem resultante do script com apenas 1 falso positivo">
+</p>
+<p align="center"><em>Imagem resultante do script com apenas 1 falso positivo gerada pela borda de uma estrela</em></p>
+
+ - Existem melhorias a serem feitas no projeto como a melhoria da limpeza de ruído em diferentes datasets, além de melhoria da visualização e contraste
 ---
 
 ### 📌 Contribuições

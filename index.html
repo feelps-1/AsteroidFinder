@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "pt-BR"></html>
+<head>     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .pictures {
+            display: flex;
+            justify-content: center;
+        }
+        .abstract {
+            text-align: justify;
+            width: 40rem;
+        }
+        .picture{
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body> 
+    <header> 
+        <h1>AsteroidFinder</h1>
+        <p>Script para detecção de rastros de asteroides</p>
+    </header>
+    <main>
+        <a href="https://github.com/feelps-1" target="_blank"><p>Felipe Santana de Oliveira</p></a>
+        <div>
+            <a href="https://docs.google.com/document/d/1Ox6-DvLU-ZKMSegG8HDvolZ18atl5q2GKTJNf1PG7Hk/edit?tab=t.0" target="_blank">
+                <button>Documentação</button>
+            </a>
+            <a href="https://github.com/feelps-1/AsteroidFinder/tree/master" target="_blank">
+                <button>Código</button>
+            </a>
+        </div>
+
+        <div class="abstract">
+        <h2>Resumo</h2>
+        <p>
+            AsteroidFinder é um script que auxilia na detecção de rastros de asteroides, utilizando uma
+            técnica que diminui os falsos positivos e melhora a visualização. Com ele é possível limpar 
+            as imagens astronômicas no formato FITS e mesclá-las para destacar rastros suaves que não 
+            seriam vistos em imagens individuais. Essa abordagem foi inspirada pelo seguinte artigo científico:
+            <a href = "https://ui.adsabs.harvard.edu/abs/2020ISPAr43B3.1185Y/abstract" target="_blank">
+                "A COMPUTER VISION APPROACH FOR DETECTION OF ASTEROIDS/COMETS IN SPACE SATELLITE IMAGES"
+            </a>
+        </p>
+        </div>
+
+        <div class="pictures">    
+            <div class="picture">
+                <img src="https://github.com/user-attachments/assets/a4738af4-ec9a-4545-8d7e-171e9b606522" width="350" alt="Imagem retirada do artigo">
+                <p><em>Imagem retirada do artigo</em></p>
+            </div>
+            <div class="picture">
+                <img src="https://github.com/user-attachments/assets/3896b8b3-462c-421f-8134-5d00ff74011d" width="350" alt="Imagem resultante do script com apenas 1 falso positivo">
+                <p><em>Imagem resultante do script</em></p>
+            </div>
+        </div>
+
+        <div class="abstract">
+            <h2>
+                Funcionamento
+            </h2>
+            <p>
+                A técnica utilizada no artigo "A COMPUTER VISION APPROACH FOR DETECTION OF ASTEROIDS/COMETS IN SPACE SATELLITE IMAGES"
+                se baseia em seguir alguns passos com objetivo de garantir eficiência e boa visualização dos rastros. Para
+                alcançar isso utilizei de duas bibliotecas do C++, 
+                <a href="https://heasarc.gsfc.nasa.gov/fitsio/ccfits/" target="_blank">CCfits</a> 
+                para manipulação de imagens no formato FITS, comumente
+                utilizadas na astronomia e <a href="https://opencv.org/" target="_blank">OpenCV</a> 
+                para necessidades de visão computacional e tratamento de imagens. Os metódos utilizados para alcançar o 
+                resultado foram executados nessa ordem:
+                <ol>
+                    <li>Separação das imagens que continham rastros</li>
+                    <li>Limpeza das imagens para diminuir ruído</li>
+                    <li>Mesclar as images</li>
+                    <li>Realizar a detecção de rastros nas imagens individuais e na mesclada</li>
+                    <li>Comparar as linhas detectadas nas imagens individuais e mesclada</li>
+                    <li>Retornar o resultado</li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="pictures">
+            <div class="picture">
+                <img src="https://i.postimg.cc/cJdHyNzm/noise-Mask.jpg" width="350">
+                <p>Linhas detectadas nas imagens individuais</p>
+            </div>
+            <div class="picture">
+                <img src="https://i.postimg.cc/fRcLrb8y/merged-Mask.jpg" width="350">
+                <p>Linhas detectadas na imagem mesclada</p>
+            </div>
+        </div>
+        </main>
+</body>

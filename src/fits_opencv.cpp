@@ -24,13 +24,13 @@ int main(int argc, char* argv[]) {
 
     AstroImagemProcessor processor;
 
-    // Process all images in the provided input folder
+    // Processa as imagens de entrada
     processor.processarPasta(inputFolder);
 
-    // Save the merged preview image
+    // Salva a imagem mesclada
     processor.salvarPreview(outputFolder);
 
-    // Uncomment to enable debugging and visualization
+    // Descomente para ativar o modo de debug
     //processor.toggleDebug();
 
     vector<Mat> individualImages = processor.getCleanedImages();
@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
     }
     merged_color.setTo(Scalar(0, 255, 0), tracks);
 
-    // Save the final processed result
+    // Salva o resultado
     string resultPath = outputFolder + "/result.jpg";
     imwrite(resultPath, merged_color);
 
